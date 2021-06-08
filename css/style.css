@@ -1,0 +1,32 @@
+body {
+  background-color: #DAF7F6;
+  color: #3B3B3B;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+header {
+  background-color: white;
+  text-align: center;
+}
+
+header img {
+  margin-right: 16px;
+}
+
+h1 {
+  display: inline-block;
+  margin: 0;
+  padding: 40px 0;
+  font-size: 48px;
+  color: #F16059;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  width: 1000px;
+  margin: 0 auto;
+}
