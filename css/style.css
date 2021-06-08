@@ -38,15 +38,23 @@ h1 {
 
 .recipe h2 {
   color: #F16059;
-  font-size: 24px;
+  font-size: 2em;
   font-weight: bold;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
   margin-top: 0;
   line-height: 29px;
+}
+
+.recipe h3 {
+  padding: 6px;
+  border-top: 1px solid #3B3B3B;
+  border-bottom: 1px solid #3B3B3B;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #F16059;
+  font-family: 'Montserrat', sans-serif;
 }
 
 main {
@@ -58,8 +66,6 @@ main {
   margin: 25px 0;
   overflow: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .image {
@@ -70,15 +76,45 @@ main {
 }
 
 .recipe {
-  display: flex;
-  justify-content: flex-start;
-  align-content: center;
-  flex-flow: row wrap;
   width: 500px;
   height: 550px;
   background-color: white;
   box-sizing: border-box;
   padding: 20px;
+}
+
+.time {
+  margin-bottom: 20px;
+  border: 1px solid #3B3B3B;
+  overflow: auto;
+  display: flex;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.time div {
+  padding-left: 6px;
+  width: 33.3333%;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.time strong {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.time .cook {
+  border-left: 1px solid #3B3B3B;
+   border-right: 1px solid #3B3B3B;
 }
 
 #cookies .image {
@@ -96,45 +132,30 @@ main {
   background-size: cover;
 }
 
-.time {
-  margin-bottom: 20px;
-  border: 1px solid #3B3B3B;
-  overflow: auto;
+.columns {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  text-transform: uppercase;
 }
 
-.time div {
-  padding-left: 6px;
-  width: 33.3333%;
-  text-transform: uppercase;
-}
-
-.time img {
-  width: 15px;
-  height: 15px;
+.directions {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  margin-right: 5px;
+  flex-direction: column;
+  width: 240px;
 }
 
-.time-details {
+.directions ol {
+  padding-left: 15px;
+  line-height: 22px;
+}
+
+.ingredients {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 205px;
+  margin-right: 15px;
 }
 
-.time strong {
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.time .cook {
-  border-left: 1px solid #3B3B3B;
-   border-right: 1px solid #3B3B3B;
+.ingredients ul {
+  padding-left: 15px;
+  line-height: 24px;
+  list-style-type: square;
 }
